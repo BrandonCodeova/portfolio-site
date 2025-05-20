@@ -1,0 +1,84 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e6f0ff;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #004080;
+    color: #ffffff;
+    padding: 40px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+/* Header Title with Animation */
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    position: relative;
+    display: inline-block;
+}
+
+header h1::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 4px;
+    background-color: #00ccff;
+    left: 20%;
+    bottom: -10px;
+    border-radius: 2px;
+    animation: slide-in 1s ease forwards;
+}
+
+@keyframes slide-in {
+    from {
+        width: 0;
+        left: 50%;
+    }
+    to {
+        width: 60%;
+        left: 20%;
+    }
+}
+
+/* Paragraph */
+p {
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+/* Image */
+img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Links */
+.links {
+    margin-top: 20px;
+}
+
+.links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #003366;
+}
